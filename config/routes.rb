@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blogs
   resources :projects
   get '/home',     to:'pages#home'
   get '/about',    to:'pages#about'
