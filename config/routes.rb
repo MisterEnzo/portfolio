@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :blogs
+  resources :blogs do
+    member do
+      get :toggle_status
+    end
+  end
   resources :projects, except: [:show]
 
   get 'project/:id', to:'projects#show', as: "project_show"
