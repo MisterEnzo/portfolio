@@ -1,0 +1,9 @@
+<%= image_tag @skill.badge %>
+<%= @skill.title %>
+<%= @skill.percent_utilized %>
+
+
+
+<%= link_to 'edit', edit_skill_path(@skill) %>
+<%= link_to 'delete', skill_path(@skill), method: :delete %>
+<%= link_to 'skills', skills_path %>

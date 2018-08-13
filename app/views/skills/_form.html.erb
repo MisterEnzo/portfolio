@@ -1,0 +1,13 @@
+<div class="container">
+  <%= form_for @skill do |f| %>
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, class:'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :percent_utilized %>
+      <%= f.text_field :percent_utilized, class:'form-control' %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+</div>

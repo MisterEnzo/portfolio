@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     end
   end
   resources :projects, except: [:show]
+  resources :skills
 
   get 'project/:id', to:'projects#show', as: "project_show"
 

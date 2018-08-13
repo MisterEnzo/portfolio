@@ -1,0 +1,12 @@
+<h1>Skills<h1>
+
+<%= link_to 'Add Skill', new_skill_path %>
+<% @skills.each do |skill| %>
+  <div>
+    <%= image_tag skill.badge %>
+    <%= link_to skill.title, skill_path(skill) %>
+    <%= skill.percent_utilized %>
+  </div>
+  <%= link_to 'edit', edit_skill_path(skill) %>
+  <%= link_to 'delete', skill_path(skill), method: :delete %>
+<% end %>
