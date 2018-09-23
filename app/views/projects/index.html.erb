@@ -1,13 +1,4 @@
 <h1>Projects</h1>
 <%= link_to 'new project', new_project_path %>
 
-<% @projects.each do |project| %>
-  <div>
-    <%= link_to project.title, project_show_path(project) %>
-    <p><%= project.subtitle %>
-    <p><%= project.body %>
-    <p><%= image_tag project.thumb_image unless project.thumb_image.nil? %>
-    <%= link_to 'Edit', edit_project_path(project) %>
-    <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?'} %>
-  </div>
-<% end %>
+<%= render @projects %>
