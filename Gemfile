@@ -34,6 +34,9 @@ gem 'bootstrap', '~> 4.1.3'
 # Add jQuery
 gem 'jquery-rails'
 
+# Add my own view gem
+gem 'enz_view_tool', git: 'https://github.com/MisterEnzo/enz_view_tool_gem'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
