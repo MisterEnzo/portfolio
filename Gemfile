@@ -69,3 +69,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Add Devise for authentication
 gem 'devise'
+
+# Add Petergat for authorization
+gem 'petergate', '~> 1.6', '>= 1.6.3'
