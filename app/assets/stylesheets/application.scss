@@ -131,6 +131,7 @@
  */
  .auth-links a {
    color: black;
+   margin-bottom: 10px;
  }
 
 .card {
@@ -140,4 +141,11 @@
 
 .register-text {
   text-align: right;
+}
+
+.login > .card {
+  margin: 0 auto;
+  float: none;
+  width: 22rem;
+  margin-bottom: 10px;
 }
