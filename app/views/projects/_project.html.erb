@@ -1,8 +1,12 @@
-<div>
-  <%= link_to project.title, project_show_path(project) %>
-  <p><%= project.subtitle %>
-  <p><%= project.body %>
-  <p><%= image_tag project.thumb_image unless project.thumb_image.nil? %>
-  <%= link_to 'Edit', edit_project_path(project) if logged_in?(:site_admin) %>
-  <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?'} if logged_in?(:site_admin) %>
+<div class="col-sm-4">
+  <div class="">
+    <%= image_tag project.thumb_image, width: '250em' unless project.thumb_image.nil? %>
+    <p class="">
+      <span><%= link_to project.title, project_show_path(project) %></span>
+      <%= project.subtitle %>
+    </p>
+    <%= link_to 'Edit', edit_project_path(project) if logged_in?(:site_admin) %>
+    <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?'} if logged_in?(:site_admin) %>
+  </div>
+
 </div>

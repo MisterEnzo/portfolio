@@ -6,6 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+3.times do |topic|
+  Topic.create!(
+    title: "Tech #{topic + 1}"
+  )
+end
+
 puts "generating blog posts.."
 10.times do |blog|
   Blog.create!(
@@ -16,7 +22,8 @@ puts "generating blog posts.."
            Chicken tri-tip corned beef pork loin doner picanha
            cupim pork belly kevin. Burgdoggen filet mignon
            alcatra ribeye pastrami, beef ribs bacon biltong buffalo
-           turkey doner ball tip."
+           turkey doner ball tip.",
+    topic: Topic.first
   )
 end
 puts "generated blog posts"
@@ -31,7 +38,7 @@ end
 puts "completed generating skills"
 
 puts "generating projects..."
-6.times do |project|
+9.times do |project|
   Project.create!(
     title: "Project #{project + 1}",
     subtitle: "My great service.",
