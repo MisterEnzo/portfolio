@@ -1,7 +1,7 @@
 <h1>Projects</h1>
 <%= link_to 'new project', new_project_path if logged_in?(:site_admin) %>
 <div class="container">
-  <div class="row">
-    <%= render @projects %>
+  <div class="row sortable">
+    <%= render partial: 'project', collection: @projects %>
   </div>
 </div>
