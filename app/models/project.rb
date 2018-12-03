@@ -9,6 +9,10 @@ class Project < ApplicationRecord
 
   after_initialize :set_defaults
 
+  def self.by_position
+    order("position ASC")
+  end
+
   def set_defaults
     self.main_image ||= Placeholder.image_generator(height: '600', width: '400')
     self.thumb_image ||= Placeholder.image_generator(height: '400', width: '300')

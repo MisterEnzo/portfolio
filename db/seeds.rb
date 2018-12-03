@@ -44,7 +44,8 @@ puts "generating projects..."
     subtitle: "My great service.",
     body: "Awesome",
     main_image: "http://placehold.it/600x450",
-    thumb_image: "http://placehold.it/400x300"
+    thumb_image: "http://placehold.it/400x300",
+    position: project + 1
   )
 end
 puts "completed generating projects"
