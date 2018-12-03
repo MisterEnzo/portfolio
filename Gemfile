@@ -27,6 +27,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# jquery-ui-rails for sortable feature of projects
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
 
 # Add bootstrap 4
 gem 'bootstrap', '~> 4.1.3'
