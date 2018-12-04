@@ -5,7 +5,9 @@ Rails.application.routes.draw do
       get :toggle_status
     end
   end
-  resources :projects, except: [:show]
+  resources :projects, except: [:show] do
+    put :sort, on: :collection
+  end
   resources :skills
 
   get 'project/:id', to:'projects#show', as: "project_show"
