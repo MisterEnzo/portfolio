@@ -37,6 +37,12 @@ gem 'bootstrap', '~> 4.1.3'
 # Add jQuery
 gem 'jquery-rails'
 
+# image upload gems
+gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+gem 'mini_magick', '~> 4.9', '>= 4.9.2'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.5'
+
 # Add my own view gem
 gem 'enz_view_tool', git: 'https://github.com/MisterEnzo/enz_view_tool_gem'
 

@@ -7,11 +7,14 @@ class Project < ApplicationRecord
 
   validates_presence_of :title, :body, :main_image, :thumb_image
 
-  after_initialize :set_defaults
+  mount_uploader :main_image, ProjectUploader
+  mount_uploader :thumb_image, ProjectUploader
 
   def self.by_position
     order("position ASC")
   end
+
+  after_initialize :set_defaults
 
   def set_defaults
     self.main_image ||= Placeholder.image_generator(height: '600', width: '400')

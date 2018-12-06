@@ -1,6 +1,6 @@
 <div class="col-sm-4 project" data-id="<%= project.id %>">
   <div class="">
-    <%= image_tag project.thumb_image, width: '250em' unless project.thumb_image.nil? %>
+    <%= image_tag project.main_image.url, width: '300px' %>
     <p class="">
       <span><%= link_to project.title, project_show_path(project) %></span>
       <%= project.subtitle %>
