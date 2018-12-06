@@ -1,4 +1,4 @@
-<%= image_tag @project.main_image %>
+<%= image_tag portfolio_image(@project.main_image.url, "main"), width: '100%' %>
 <h1><%= @project.title %></h1>
 <em><%= @project.subtitle %></em>
 <p><<%= @project.body %></p>
