@@ -27,28 +27,6 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# jquery-ui-rails for sortable feature of projects
-gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
-
-
-# Add bootstrap 4
-gem 'bootstrap', '~> 4.1.3'
-
-# Add jQuery
-gem 'jquery-rails'
-
-# image upload gems
-gem 'carrierwave', '~> 1.2', '>= 1.2.3'
-gem 'mini_magick', '~> 4.9', '>= 4.9.2'
-gem 'carrierwave-aws', '~> 1.3'
-gem 'dotenv-rails', '~> 2.5'
-
-# cocoon for managing technology fields for projects
-gem 'cocoon', '~> 1.2', '>= 1.2.12'
-
-# Add my own view gem
-gem 'enz_view_tool', git: 'https://github.com/MisterEnzo/enz_view_tool_gem'
-
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -84,3 +62,28 @@ gem 'devise'
 
 # Add Petergat for authorization
 gem 'petergate', '~> 1.6', '>= 1.6.3'
+
+
+# jquery-ui-rails for sortable feature of projects
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
+# Add bootstrap 4
+gem 'bootstrap', '~> 4.1.3'
+
+# Add jQuery
+gem 'jquery-rails'
+
+# image upload gems
+gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+gem 'mini_magick', '~> 4.9', '>= 4.9.2'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.5'
+
+# cocoon for managing technology fields for projects
+gem 'cocoon', '~> 1.2', '>= 1.2.12'
+
+# gritter for notifications
+gem 'gritter', '~> 1.2'
+
+# Add my own view gem
+gem 'enz_view_tool', git: 'https://github.com/MisterEnzo/enz_view_tool_gem'
