@@ -24,6 +24,7 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(project_params)
     if @project.save
+      flash[:notice] = "Project created successfully."
       redirect_to projects_path
     else
       render 'new'
@@ -35,6 +36,7 @@ class ProjectsController < ApplicationController
 
   def update
     if @project.update(project_params)
+      flash[:notice] = "Project updated successfully."
       redirect_to projects_path
     else
       render :edit
@@ -43,6 +45,7 @@ class ProjectsController < ApplicationController
 
   def destroy
     @project.destroy
+    flash[:notice] = "Project deleted."
     redirect_to projects_url
   end
 
