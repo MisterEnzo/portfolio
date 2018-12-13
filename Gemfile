@@ -43,6 +43,9 @@ gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'dotenv-rails', '~> 2.5'
 
+# cocoon for managing technology fields for projects
+gem 'cocoon', '~> 1.2', '>= 1.2.12'
+
 # Add my own view gem
 gem 'enz_view_tool', git: 'https://github.com/MisterEnzo/enz_view_tool_gem'
 
