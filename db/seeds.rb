@@ -20,7 +20,7 @@ User.create!(
 end
 
 puts "generating blog posts.."
-10.times do |blog|
+5.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog + 1}",
     body: "Bacon ipsum dolor amet fatback short ribs ribeye
@@ -33,6 +33,22 @@ puts "generating blog posts.."
     topic: Topic.first
   )
 end
+
+5.times do |blog|
+  Blog.create!(
+    title: "My Published Blog Post #{blog + 1}",
+    body: "Bacon ipsum dolor amet fatback short ribs ribeye
+           landjaeger burgdoggen cupim biltong turducken ground
+           round flank. Picanha pork hamburger corned beef ham.
+           Chicken tri-tip corned beef pork loin doner picanha
+           cupim pork belly kevin. Burgdoggen filet mignon
+           alcatra ribeye pastrami, beef ribs bacon biltong buffalo
+           turkey doner ball tip.",
+    topic: Topic.first,
+    status: "published"
+  )
+end
+
 puts "generated blog posts"
 
 puts "generating skills..."

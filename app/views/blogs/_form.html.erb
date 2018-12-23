@@ -4,18 +4,24 @@
       <%= alert_generator error %>
     <% end %>
   <% end %>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="field form-group">
+        <%= form.label :title %>
+        <%= form.text_field :title, class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+      <div class="field form-group">
+        <%= form.label :body %>
+        <%= form.text_area :body, class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
+      <div class="field form-group">
+        <%= form.label :topic_id %>
+        <%= form.collection_select :topic_id, Topic.order(:title), :id, :title, {include_blank: true}, class: "form-control" %>
+      </div>
 
-  <div class="actions">
-    <%= form.submit %>
+        <%= form.submit action ,class: "btn btn-primary btn-block" %>
+    </div>
   </div>
 <% end %>
