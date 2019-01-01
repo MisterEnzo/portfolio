@@ -1,0 +1,6 @@
+<%= blog.title %>
+<%= blog.body %>
+<%= link_to blog.status, toggle_status_blog_path(blog) if logged_in?(:site_admin) %>
+<%= link_to 'Show', blog %>
+<%= link_to 'Edit', edit_blog_path(blog) if logged_in?(:site_admin) %>
+<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin)%>
