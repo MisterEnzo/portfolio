@@ -88,5 +88,9 @@ gem 'cocoon', '~> 1.2', '>= 1.2.12'
 # gritter for notifications
 gem 'gritter', '~> 1.2'
 
+# add font-awesome
+gem 'font-awesome-sass', '~> 5.6.1'
+
+
 # Add my own view gem
 gem 'enz_view_tool', git: 'https://github.com/MisterEnzo/enz_view_tool_gem'
