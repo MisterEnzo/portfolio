@@ -30,5 +30,8 @@ module Portfolio
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Secret Keys
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
   end
 end
