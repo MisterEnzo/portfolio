@@ -1,30 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Blogs</h1>
+<%= link_to 'New Post', new_blog_path if logged_in?(:site_admin) %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.body %></td>
-        <td><%= link_to blog.status, toggle_status_blog_path(blog) if logged_in?(:site_admin) %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) if logged_in?(:site_admin) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin)%></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 blog-main">
+      <% @blogs.each do |blog| %>
+        <div class="blog-post text-left">
+          <h2 class="blog-post-title"><%= blog.title %></h2>
+          <p class="blog-post-time"><%= time_ago_in_words(blog.updated_at) %></p>
+          <p><%= blog.body %></p>
+          <%= link_to 'Show', blog %>
+          <%= link_to blog.status, toggle_status_blog_path(blog) if logged_in?(:site_admin) %>
+          <%= link_to 'Edit', edit_blog_path(blog) if logged_in?(:site_admin) %>
+          <%= link_to 'Delete', blog_path(blog), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
+        </div>
+      <hr>
+      <% end %>
+    </div>
+  </div>
+</div>

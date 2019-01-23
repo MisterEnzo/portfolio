@@ -73,6 +73,9 @@ gem 'bootstrap', '~> 4.1.3'
 # Add jQuery
 gem 'jquery-rails'
 
+# Add Active Link 
+gem 'active_link_to'
+
 # image upload gems
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 gem 'mini_magick', '~> 4.9', '>= 4.9.2'
@@ -84,6 +87,10 @@ gem 'cocoon', '~> 1.2', '>= 1.2.12'
 
 # gritter for notifications
 gem 'gritter', '~> 1.2'
+
+# add font-awesome
+gem 'font-awesome-sass', '~> 5.6.1'
+
 
 # Add my own view gem
 gem 'enz_view_tool', git: 'https://github.com/MisterEnzo/enz_view_tool_gem'

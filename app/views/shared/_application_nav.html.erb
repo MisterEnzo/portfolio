@@ -2,12 +2,17 @@
   <div class="inner">
     <h3 class="masthead-brand">Enzo Naguiat</h3>
     <nav class="nav nav-masthead justify-content-center">
-      <%= link_to "Home", root_path, class: "nav-link" %>
-      <%= link_to "About", about_path, class: "nav-link" %>
-      <%= link_to "Contact", contact_path, class: "nav-link" %>
-      <%= link_to "Blog", blogs_path, class: "nav-link" %>
-      <%= link_to "Projects", projects_path, class: "nav-link" %>
-      <%= login_helper "nav-link" %>
+      <%= active_link_to "About", about_path, class: "nav-link" %>
+      <%= active_link_to "Contact", contact_path, class: "nav-link" %>
+      <%= active_link_to "Blog", blogs_path, class: "nav-link" %>
+      <%= active_link_to "Projects", projects_path, class: "nav-link" %>
+      <%= link_to  'https://github.com/MisterEnzo', class: "nav-link" do %>
+        <i class="fab fa-github"></i>
+      <% end %>
+      <%= link_to  'https://www.linkedin.com/in/enzo-naguiat-835ba798/', class: "nav-link" do %>
+        <i class="fab fa-linkedin"></i>
+      <% end %>
+      <%#= login_helper "nav-link" %>
     </nav>
   </div>
 </header>
