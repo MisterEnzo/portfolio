@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-md-8 offset-md-2 blog-main">
       <% @blogs.each do |blog| %>
-        <div class="blog-post">
+        <div class="blog-post text-left">
           <h2 class="blog-post-title"><%= blog.title %></h2>
           <p class="blog-post-time"><%= time_ago_in_words(blog.updated_at) %></p>
           <p><%= blog.body %></p>
@@ -15,10 +15,8 @@
           <%= link_to 'Edit', edit_blog_path(blog) if logged_in?(:site_admin) %>
           <%= link_to 'Delete', blog_path(blog), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
         </div>
-        
+      <hr>
       <% end %>
     </div>
-
   </div>
-
 </div>
