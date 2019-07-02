@@ -13,11 +13,18 @@ User.create!(
   roles: "site_admin"
 )
 
-3.times do |topic|
-  Topic.create!(
-    title: "Tech #{topic + 1}"
-  )
-end
+
+Topic.create!(
+  title: "React"
+)
+
+Topic.create!(
+  title: "Rails"
+)
+
+Topic.create!(
+  title: "Ruby"
+)
 
 puts "generating blog posts.."
 5.times do |blog|
