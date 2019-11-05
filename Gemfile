@@ -68,7 +68,7 @@ gem 'petergate', '~> 1.6', '>= 1.6.3'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
 # Add bootstrap 4
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap', '~> 4.3.1'
 
 # Add jQuery
 gem 'jquery-rails'
