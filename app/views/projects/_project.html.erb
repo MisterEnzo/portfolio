@@ -1,10 +1,12 @@
 <div class="col-sm-4 project" data-id="<%= project.id %>">
   <div class="">
-    <%= image_tag portfolio_image(project.thumb_image.url, "thumb"), width: '100%' %>
-    <p class="">
-      <span><%= link_to project.title, project_show_path(project) %></span>
-      <%= project.subtitle %>
-    </p>
+    <%= link_to project.link do %>
+      <%= image_tag portfolio_image(project.thumb_image.url, "thumb"), width: '100%' %>
+      <p class="">
+        <span><%= link_to project.title, project_show_path(project) %></span>
+        <%= project.subtitle %>
+      </p>
+    <% end %>
     <%= link_to 'Edit', edit_project_path(project) if logged_in?(:site_admin) %>
     <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?'} if logged_in?(:site_admin) %>
   </div>
