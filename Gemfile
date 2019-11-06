@@ -78,7 +78,7 @@ gem 'active_link_to'
 
 # image upload gems
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
-gem 'mini_magick', '~> 4.9', '>= 4.9.2'
+gem 'mini_magick', '~> 4.9'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'dotenv-rails', '~> 2.5'
 
