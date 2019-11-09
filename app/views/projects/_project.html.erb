@@ -1,7 +1,9 @@
 <div class="col-sm-4 project" data-id="<%= project.id %>">
   <div class="">
     <%= link_to (project.link ? project.link : "") do %>
-      <%= image_tag portfolio_image(project.thumb_image.url, "thumb"), width: '100%' %>
+      <div class="project-image">
+        <%= image_tag portfolio_image(project.thumb_image.url, "thumb"), width: '100%' %>
+      </div>
       <p class="">
         <span><%= link_to project.title, project_show_path(project) %></span>
         <%= project.subtitle %>
