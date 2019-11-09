@@ -68,7 +68,7 @@ gem 'petergate', '~> 1.6', '>= 1.6.3'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
 # Add bootstrap 4
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap', '~> 4.3.1'
 
 # Add jQuery
 gem 'jquery-rails'
@@ -78,7 +78,7 @@ gem 'active_link_to'
 
 # image upload gems
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
-gem 'mini_magick', '~> 4.9', '>= 4.9.2'
+gem 'mini_magick', '~> 4.9'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'dotenv-rails', '~> 2.5'
 
