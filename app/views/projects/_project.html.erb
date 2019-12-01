@@ -6,7 +6,7 @@
         <%= image_tag portfolio_image(project.thumb_image.url, "thumb"), width: '100%', class: "project-image" %>
       </div>
       <p class="">
-        <%= project.subtitle %>
+        <%= project.body %>
       </p>
     <% end %>
     <%= link_to 'Edit', edit_project_path(project) if logged_in?(:site_admin) %>
