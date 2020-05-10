@@ -1,16 +1,36 @@
 <div class="row">
-  <div class="about col-sm-6 offset-sm-3">
+  <div class="about col-sm-8 offset-sm-2">
     <%= image_tag "enzo.jpg", class: "avatar" %>
-    <p>Enzo Naguiat here! I'm a Ruby on Rails and React Developer,
-      currently based in Tokyo and studying Japanese.
-      If you are interested to hire me, please feel free to me message on
-      <%= link_to  "GitHub", 'https://github.com/MisterEnzo' %> or
-      <%= link_to  "LinkedIn",'https://www.linkedin.com/in/enzo-naguiat-835ba798/' %>.
-    </p>
+    <p>I'm an aspiring Fullstack Developer based in Tokyo. Currently, I'm studying Nihongo, Node and Express.</p>
+    <h4>My Tech Stack:</h4>
+    <div class="row">  
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <li class="list-group-item">Ruby on Rails</li>
+          <li class="list-group-item">Ruby</li>
+          <li class="list-group-item">RSpec</li>
+          <li class="list-group-item">Heroku</li>
+          <li class="list-group-item">AWS (EC2, S3, EBS)</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <li class="list-group-item">React</li>
+          <li class="list-group-item">JavaScript</li>
+          <li class="list-group-item">HTML/CSS</li>
+          <li class="list-group-item">Bootstrap, Materialize</li>
+          <li class="list-group-item">Git, GitHub</li>
+        </ul> 
+      </div>
+    </div>
+    <br>
+    <p>For hiring or project inquiries, please feel free to me message on</p>
+    <%= link_to  "GitHub", 'https://github.com/MisterEnzo' %> or
+    <%= link_to  "LinkedIn",'https://www.linkedin.com/in/enzo-naguiat/' %>.
     <br>
     <p>
       Please feel free to checkout: 
-      <%= link_to "My Projects", projects_path, class:"btn btn-light" %>
+      <%= link_to "My Projects", projects_path, class:"btn btn-sm btn-light" %>
     </p>
   </div>
 </div>
